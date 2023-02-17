@@ -2,7 +2,7 @@
     background-color: crimson;
 }
 
-.btn{
+.button{
     background-color: coral;
     padding: 10px 15px;
     border: 0;
@@ -11,8 +11,7 @@
     margin-left: 50px;
 }
 
-.search{
-    color: chartreuse;
-    padding: 50px;
-    background-color: rgb(205, 205, 205);
+.random {
+    background-image: url("./sfondo.jpg");
 }
+

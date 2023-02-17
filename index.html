@@ -14,11 +14,17 @@
     <div id="app">
         <h1 :class="className">{{text}}</h1>
 
-        <figure ></figure>
+        <input
+            type="image"
+            class="btnImg"
+            src="https://picsum.photos/id/237/200/300"
+            alt="Search"
+            @click="text= reset"
+        />
 
         <p>{{title}}</p>
         <input type="text" v-model="title" placeholder="Gennaro">
-        <button :class="btnImg" @click="text = reset">SCHIACCIAMII</button>
+        <button :class="btn"  @click="title = reset ">SCHIACCIAMII</button>
     </div>
 
     
@@ -33,13 +39,9 @@
                     title: 'inserisci quello che ti piace!',
                     reset: 'bravo hai schiacciato il bottone!!!!',
                     className: 'titleJs',
-                    btnImg: 'search',
-                    btn: 'button',
+                    btn: 'button'
                     
                 }
-            },
-            methods:{
-               
             },
         }
 
