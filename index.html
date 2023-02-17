@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Hello</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+   
+
+    <div id="app">
+        <h1 :class="className">{{text}}</h1>
+
+        <figure ></figure>
+
+        <p>{{title}}</p>
+        <input type="text" v-model="title" placeholder="Gennaro">
+        <button :class="btnImg" @click="text = reset">SCHIACCIAMII</button>
+    </div>
+
+    
+
+    <script>
+        const { createApp } = Vue
+
+        const option = { 
+            data() {
+                return {
+                    text: 'Questo è il titolo di vue js',
+                    title: 'inserisci quello che ti piace!',
+                    reset: 'bravo hai schiacciato il bottone!!!!',
+                    className: 'titleJs',
+                    btnImg: 'search',
+                    btn: 'button',
+                    
+                }
+            },
+            methods:{
+               
+            },
+        }
+
+        const app = createApp(option)
+        
+        app.mount('#app')
+    </script>
+</body>
+</html>
